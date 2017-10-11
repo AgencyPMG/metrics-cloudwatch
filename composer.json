@@ -1,0 +1,26 @@
+{
+    "name": "pmg/metrics-cloudwatch",
+    "description": "A cloudwatch reporter for pmg/metrics",
+    "license": "Apache-2.0",
+    "authors": [
+        { "name": "Christopher Davis", "email": "chris@pmg.com" }
+    ],
+    "require": {
+        "php": "~7.1",
+        "pmg/metrics": "^0.1",
+        "aws/aws-sdk-php": "~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "PMG\\Metrics\\CloudWatch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PMG\\Metrics\\CloudWatch\\": "test/"
+        }
+    }
+}
