@@ -62,7 +62,7 @@ class CloudWatchReporterTest extends TestCase
         $this->reporter->reportOn($set);
     }
 
-    protected function setUp()
+    protected function setUp() : void
     {
         $this->cloudwatch = $this->getMockBuilder(CloudWatchClient::class)
             ->setMethods(['putMetricData'])
